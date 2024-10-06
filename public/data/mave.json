@@ -1,0 +1,579 @@
+{
+    "dashboard": {
+        "Gene metrics": [
+            {
+                "title": "Started",
+                "total": 43,
+                "current": null
+            },
+            {
+                "title": "Completed",
+                "total": 0,
+                "current": null
+            }
+        ],
+        "Targeton metrics": [
+            {
+                "title": "Started",
+                "total": 373,
+                "current": 12
+            },
+            {
+                "title": "In progress",
+                "total": 72,
+                "current": 17
+            },
+            {
+                "title": " Completed",
+                "total": 82,
+                "current": 9
+            },
+            {
+                "title": " Pass",
+                "total": 53,
+                "current": 0
+            },
+            {
+                "title": " Fail (screening / analysis)",
+                "total": 29,
+                "current": 4
+            },
+            {
+                "title": "On hold",
+                "total": 102,
+                "current": 2
+            },
+            {
+                "title": "Not started",
+                "total": 117,
+                "current": null
+            }
+        ]
+    },
+    "casm": {
+        "totals": [
+            {
+                "title": "Genes",
+                "started": 10,
+                "completed": 0
+            },
+            {
+                "title": "Targetons",
+                "started": 48,
+                "completed": 33
+            }
+        ],
+        "data": [
+            {
+                "gene": "BRCA2 / 63",
+                "status": [
+                    "22 in progress",
+                    "41 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATM / 71",
+                "status": [
+                    "71 removed from SciOps pipeline"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "POLD1 / 26",
+                "status": [
+                    "6 in progress",
+                    "20 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            }
+        ]
+    },
+    "humgen": {
+        "totals": [
+            {
+                "title": "Genes",
+                "started": 32,
+                "completed": 0
+            },
+            {
+                "title": "Targetons",
+                "started": 102,
+                "completed": 39
+            }
+        ],
+        "data": [
+            {
+                "gene": "BRCA2 / 63",
+                "status": [
+                    "22 in progress",
+                    "41 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATM / 71",
+                "status": [
+                    "71 removed from SciOps pipeline"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "POLD1 / 26",
+                "status": [
+                    "6 in progress",
+                    "20 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            },
+            {
+                "gene": "ATRX / 34",
+                "status": [
+                    "34 not started"
+                ],
+                "completion": null
+            }
+        ]
+    }
+}

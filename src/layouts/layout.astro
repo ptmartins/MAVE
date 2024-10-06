@@ -1,0 +1,67 @@
+---
+import '../styles/globals.css';
+import Nav from '../components/Nav.astro';
+import { Image } from 'astro:assets';
+
+const svg1Src = '/images/1.svg';
+const svg2Src = '/images/2.svg';
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title> { title } </title>
+	</head>
+	<body>
+        <div class="mainWrapper">
+            <header class="header">
+                <div class="logo">MAVE</div>
+                <Nav />
+            </header>
+            <main class="main">
+                <slot {data} />
+            </main>
+
+            <Image src={ svg1Src } alt="decor one" aria-hidden="true" class="decorOne" width="300" height="300"/>
+            <Image src={ svg2Src } alt="decor two" aria-hidden="true" class="decorTwo" width="400" height="400"/>
+        </div>
+	</body>
+</html>
+
+
+<style>
+
+    .header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1;
+
+    }
+
+    .decorOne, 
+    .decorTwo {
+        position: absolute;
+    }
+
+    .decorOne {
+        inset-block-end: -5rem;
+        inset-inline-start: -5rem;
+    }
+
+    .decorTwo {
+        inset-block-start: -5rem;
+        inset-inline-end: -5rem;
+        transform: rotate(10deg);
+    }
+</style>

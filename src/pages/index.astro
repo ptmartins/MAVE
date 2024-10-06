@@ -1,16 +1,23 @@
 ---
+import Layout from '../layouts/layout.astro';
+import Table from '../components/Table.astro';
+import { Icon } from 'astro-icon/components';
 
+import { fetchJSONData } from '../utils/fetchdata.js';
+const data = fetchJSONData();
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Mave - Dashboard">
+	<h1 class="page__title">MAVE Operations - totals</h1>
+
+	<section class="section section--geneMetrics">
+		<h2 class="table__title"><Icon name="material-symbols:genetics" class="table__icon"/>Gene metrics</h2>
+		<Table data={ data.dashboard['Gene metrics'] } />	
+	</section>
+
+	<section class="section section--targetonMetrics">
+		<h2 class="table__title"><Icon name="mdi:target" class="table__icon" />Targeton metrics</h2>
+		<Table data={ data.dashboard['Targeton metrics'] } />
+	</section>
+
+</Layout>

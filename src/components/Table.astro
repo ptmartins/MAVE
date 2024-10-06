@@ -1,0 +1,103 @@
+---
+const { data, className } = Astro.props;
+const headers = Object.keys(data[0] || {});
+const tableHeaders = [];
+
+for(let i = 0; i < headers.length; i++) {
+    let date = new Date().toLocaleDateString('en-EN', {month: 'short', year: 'numeric'});
+    if(headers[i] === 'current') {
+        tableHeaders.push(date);
+    } else {
+        tableHeaders.push(headers[i]) ;
+    }
+}
+
+---
+
+<table class={ className ? className : 'table'}>
+    <thead>
+        <tr>
+            {tableHeaders.map(header => (
+                <th key={header}>{header}</th>
+            ))}
+        </tr>
+    </thead>
+    <tbody>
+        {data.map((row, index) => (
+            <tr key={index}>
+                {headers.map(header => {
+                    return (
+                        <td key={JSON.stringify(header)}>
+                            {Array.isArray(row[header]) ? (
+                                row[header].map((item, itemIndex) => (
+                                    <span key={itemIndex}>{item}</span>
+                                ))
+                            ) : (
+                                row[header] !== null ? row[header] : <span class="null"><i class="null__icon"></i></span>
+                            )}
+                        </td>
+                    );
+                })}
+            </tr>
+        ))}
+    </tbody>
+</table>
+
+<style>
+    
+    table {
+        border-collapse: collapse;
+        font-size: 1.2rem;
+        max-height: 500px;
+        overflow-y: scroll;
+        text-align: start;
+        width: 80%;
+    }
+
+    thead {
+        text-transform: uppercase;
+        height: 80px;
+    }
+
+    th {
+        text-align: start;
+    }
+
+    th:nth-child(1),
+    td:nth-child(1) {
+        text-align: left;
+        width: 50%;
+    }
+
+    th,
+    td {
+        width: 25%;
+    }
+
+    th:nth-child(1) {
+        visibility: hidden;
+    }
+    
+    tr td {
+        border-block-end: 1px solid var(--primary-faded);
+        height: 48px;
+    }
+
+    tr:last-child td {
+        border-block-end: 0;
+    }
+
+
+    table.foobar th:nth-child(1) {
+        visibility: visible;
+    }
+
+    table.foobar tr td:not(:nth-child(1)) {
+        font-size: 14px;
+    }
+
+    td span:not(.null) {
+        display: block; 
+    }
+
+</style>

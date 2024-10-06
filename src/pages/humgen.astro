@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/layout.astro';
+import Table from '../components/Table.astro';
+
+import { fetchJSONData } from '../utils/fetchdata.js';
+const data = fetchJSONData();
+---
+
+<Layout title="MAVE - HumGen">
+    <h1 class="page__title">MAVE Operations - HumGen</h1>
+
+	<section class="section">
+		<Table data={ data.humgen.data} className="foobar"/>	
+	</section>
+
+</Layout>

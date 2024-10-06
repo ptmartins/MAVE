@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #424874;
+    --primary-faded: #d9dcf8;
+    --font-color: var(--primary-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: var(--font-color);
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    border-block-end: 1px solid var(--font-color);
+    padding-block-end: 1.5rem;
+}
+
+.mainWrapper {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    padding-block: 4.5rem;
+}
+
+.page__title {
+    font-size: 3rem;
+    margin-block-end: 9rem;
+}
+
+.section {
+    max-height: 800px;
+    overflow: auto;
+}
+
+.section--geneMetrics,
+.section--targetonMetrics {
+    margin-block-end: 4.5rem;
+
+    table {
+        margin-block-start: -46px;
+    }
+}
+
+.table__title {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.table__icon {
+    background-color: var(--font-color);
+    border-radius: 50%;
+    color: #fff;
+    height: 48px;
+    padding: 8px;
+    width: 48px;
+}
+
+.null {
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    width: 28px;
+}
+
+.null__icon {
+    background-color: #fff;
+    display: inline-block;
+    height: 4px;
+    width: 14px;
+}

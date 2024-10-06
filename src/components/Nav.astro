@@ -1,0 +1,51 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // 
+---
+
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="/" class={ currentPath === '' ? 'nav__link active' : 'nav__link' }>Dashboard</a>
+        </li>
+        <li class="nav__item">
+            <a href="/casm" class={ currentPath === 'casm' ? 'nav__link active' : 'nav__link' }>CASM</a>
+        </li>
+        <li class="nav__item">
+            <a href="/humgen" class={ currentPath === 'humgen' ? 'nav__link active' : 'nav__link' }>HumGen</a>
+        </li>
+    </ul>
+</nav>
+
+<style>
+
+    .nav {
+        display: flex;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+        margin-inline: auto 0;
+    }
+
+    .nav__link {
+        color: var(--font-color);
+        position: relative;
+
+        &.active::after {
+            background-color: var(--primary-color);
+            content: '';
+            display: block;
+            height: 6px;
+            inset-block-end: calc(-1.5rem - 4px);
+            inset-inline-start: 0;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+</style>
